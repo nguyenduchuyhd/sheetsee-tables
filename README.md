@@ -85,7 +85,7 @@ If you want to have an input to allow users to search/filter the data in the tab
 
 ```javascript
 <input id="tableFilter" type="text" placeholder="filter by.."></input>
-<a href="#" class=".clear">Clear</a>
+<a href="#" class="clear">Clear</a>
 ```
 
 Then you'll pass your `tableOptions` object into this method:
@@ -99,18 +99,18 @@ Sheetsee.initiateTableFilter(tableOptions)
 _HTML_
 
 ```HTML
-<input id="siteTableFilter" type="text"></input><a href="#" class=".clear">Clear</a>
+<input id="siteTableFilter" type="text"></input><a href="#" class="clear">Clear</a>
 <div id="siteTable"></div>
 ```
 
 _Template_
 
 ```JavaScript
-<script id="tableTemplate" type="text/html">
+<script id="siteTable_template" type="text/html">
     <table>
     <tr><th class="tHeader">City</th><th class="tHeader">Place Name</th><th class="tHeader">Year</th><th class="tHeader">Image</th></tr>
       {{#rows}}
-        <tr><td>{{city}}</td><td>{{placename}}</td><td>{{year}}</td><td>{{image}}</td></tr>
+        <tr><td>{{City}}</td><td>{{PlaceName}}</td><td>{{Year}}</td><td>{{Image}}</td></tr>
       {{/rows}}
   </table>
 </script>
@@ -133,6 +133,10 @@ _JavaScript_
   })
 </script>
 ```
+
+## Step-by-step table setup
+
+See [docs/table-setup.md](docs/table-setup.md) for a complete walkthrough that starts with spreadsheet-shaped data, adds the required HTML placeholder, builds the Mustache template, enables sorting and filtering, and includes a small troubleshooting checklist for common demo problems.
 
 _[View Demo](http://jlord.us/sheetsee.js/demos/demo-table.html)_
 _[Visit Site](http://jlord.us/sheetsee.js)_
