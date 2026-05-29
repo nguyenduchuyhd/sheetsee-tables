@@ -93,6 +93,14 @@ Then open `test/index.html` in a browser and confirm:
 - Clicking `Clear` empties the filter input and restores the table.
 - Pagination links move between pages when enough rows are present.
 
+For a simple static server instead of opening the file directly, run one from the project root and visit the test page:
+
+```bash
+python -m http.server 8765
+```
+
+Then open `http://127.0.0.1:8765/test/index.html`.
+
 ## Troubleshooting
 
 - If the table area is empty, check that `tableDiv` points to an existing element id.

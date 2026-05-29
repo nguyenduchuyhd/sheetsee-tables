@@ -6,6 +6,17 @@ Sheetsee,js uses this module to make tables. With this module you can create tab
 
 You'll need a placeholder `<div>` in your html, a `<script>` with a [Mustache.js](https://mustache.github.io) template and a `<script>` that tells Sheetsee to build the table.
 
+## Quick start
+
+Build the bundled local demo and open `test/index.html` in a browser:
+
+```bash
+npm install
+npm run bfy
+```
+
+The demo uses `test/data.js`, `test/index.html`, and the generated `test/sheetsee.js` bundle. Use it as the quickest working reference for placeholder ids, template ids, sorting headers, filtering, and pagination.
+
 ## Your HTML Placeholder
 
 This is as simple as an empty `<div>` with an `id`.
@@ -138,5 +149,5 @@ _JavaScript_
 
 See [docs/table-setup.md](docs/table-setup.md) for a complete walkthrough that starts with spreadsheet-shaped data, adds the required HTML placeholder, builds the Mustache template, enables sorting and filtering, and includes a small troubleshooting checklist for common demo problems.
 
-_[View Demo](http://jlord.us/sheetsee.js/demos/demo-table.html)_
+_[View local demo](test/index.html)_
 _[Visit Site](http://jlord.us/sheetsee.js)_
